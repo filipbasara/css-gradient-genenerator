@@ -5,4 +5,4 @@ As part of some JavaScript practice I've created a small helper tool to generate
 ## Demo
 
 You can view the demo on the following URL
-https://filipbasara.github.io/random-gradient-generator/
+https://filipbasara.github.io/css-gradient-generator/
