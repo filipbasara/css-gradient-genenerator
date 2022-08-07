@@ -1,6 +1,7 @@
 # Random Linear Gradient Generator
 
-As part of some JavaScript practice I've created a small helper tool to generate random linear gradients.
+Final project for CS50.
+A small helper tool to generate random linear gradients.
 
 ## Demo
 
