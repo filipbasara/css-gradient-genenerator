@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #d6074c;
+
+    --dark: #131313;
+    --med: #747474;
+    --light: #e6e6e6;
+    font-size: 16px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    background: white;
+    color: var(--dark);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    height: 100%;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+    display: block;
+}
+
+#app {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#app #headline {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--dark);
+}
+
+#app #gradient {
+    width: 20rem;
+    height: 20rem;
+    align-self: center;
+    margin-bottom: 4rem;
+    border: 1px solid var(--light);
+    border-radius: 1rem;
+    transition: 0.3s all ease;
+}
+
+#app #refresh {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: none;
+    border: none;
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#app #refresh svg {
+    vertical-align: text-bottom;
+    fill: white;
+}
+
+#app #copy-button {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    background-color: var(--dark);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+#app .container {
+    margin: 0 auto;
+
+    justify-content: center;
+}
+
+#app #output {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    text-align: center;
+    width: 15rem;
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+    #app {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #app #headline {
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    #app #refresh {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #app #refresh svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
